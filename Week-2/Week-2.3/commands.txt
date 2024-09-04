@@ -1,0 +1,24 @@
+pwd -> Print Working Directory
+
+cd -> Change Directory
+
+ls -> List All files
+
+mkdir -> Make a directory 
+
+touch -> Create a new empty file
+
+cat -> Display file text
+
+vi -> Edit file details
+
+mv -> Move files
+
+cp -> Copy files 
+
+**********************************************
+Node Commands
+
+node -> Node to run and all commands
+
+npm -> node package manager
