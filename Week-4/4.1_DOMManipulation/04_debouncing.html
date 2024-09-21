@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let timeout;
+        function debouncePopulateDiv(){
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                populateDiv();
+            }, 1000);
+        }
+        function populateDiv(){
+            const a = document.getElementById("first").value;
+            const b = document.getElementById("second").value;
+            const element = document.getElementById("finalSum");
+            element.innerHTML = parseInt(a) + parseInt(b);
+        }
+    </script>
+
+    <input oninput="debouncePopulateDiv()" id="first" type="text" placeholder="FirstNumber">
+    <input oninput="debouncePopulateDiv()"" id="second" type="text" placeholder="SecondNumber">
+    <div id="finalSum"></div>
+</body>
+</html>
