@@ -1,0 +1,7 @@
+npm create vite@latest
+
+cd toFolder
+
+npm install
+
+npm run dev
